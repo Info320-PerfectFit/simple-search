@@ -30,8 +30,35 @@
       <h1>Perfect Fit</h1>
       <div id="searchbox">
 	<!-- The input box where users will enter their query -->
-	<input id="query" type="text" placeholder="Search here..." required></input>
-	<button id="search">Search</button>
+      <div id="searchbar">
+      	<div class="buttons">
+          <label>
+            <input id="strength" name="options" type="radio" />
+            <img src="dumbbell16.png" alt="Strength Training" />
+          </label>
+        </div>
+        <div class="buttons">
+          <label>
+            <input id="stretch" name="options" type="radio" />
+            <img src="stretching1.png" alt="Stretching" />
+          </label>
+        </div>
+        <div class="buttons">
+          <label>
+            <input id="cardio" name="options" type="radio" />
+            <img src="runer.png" alt="Cardio" />
+          </label>
+        </div>
+        <div class="buttons">
+          <label>
+            <input id="quick" name="options" type="radio" />
+            <img src="time21.png" alt="Quick Workouts" />
+          </label>
+        </div>
+        <div id="searchbox">
+          <input id="query" type="text" placeholder="Search here..." required></input>
+          <button id="search">Search</button>
+        </div>
       </div>
       <!-- Container where results will be filled in -->
       <div id="results"></div>

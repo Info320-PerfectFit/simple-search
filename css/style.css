@@ -19,6 +19,19 @@ h1 {
     padding-top: 50px;
 }
 
+.buttons {
+    float: left;
+    width: 25%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked {
+    background-color: #d0d0d0;
+}
+
 h3 {
     font-size: 135%;
     font-weight: 400;
@@ -75,6 +88,14 @@ button#search {
 input#query {
     font-size: 150%;
     width: 65%;
+}
+
+.results {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 5px solid black;
 }
 
 em {

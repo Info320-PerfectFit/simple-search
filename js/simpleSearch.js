@@ -8,11 +8,34 @@ $(function(){
 
     $( "button#search" ).click(function() simpleSearch() );
 
+    $( "input#strength" ).click(function() strengthSearch() );
+
+    $( "input#stretch" ).click(function() stretchSearch() );
+
+    $( "input#cardio" ).click(function() cardioSearch() );
+
+    $( "input#quick" ).click(function() quickSearch() );
+
     // Performs search when 'enter' key is pressed
     $( "input#query" ).keypress(function( event ) {
         if ( event.which == 13 ) simpleSearch();
     });
 })
+
+    function strengthSearch() {
+        search( 'strength query', $( "#strengthResults" ), $( ".template.result" ) );
+    }
+    function stretchSearch() {
+        search( 'stretch query', $( "#stretchResults" ), $( ".template.result" ) );
+    }
+    function cardioSearch() {
+        search( 'cardio query', $( "#cardioResults" ), $( ".template.result" ) );
+    }
+    function quickSearch() {
+        search( 'quick query', $( "#quickResults" ), $( ".template.result" ) );
+    }
+
+
 
 // Input: query string, results container, result HTML template
 // Effect: makes an AJAX call to the server to get the results of the
