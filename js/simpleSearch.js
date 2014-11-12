@@ -23,16 +23,16 @@ $(function(){
 })
 
     function strengthSearch() {
-        search( 'strength query', $( "#strengthResults" ), $( ".template.result" ) );
+        search( 'strength query', $( "#results" ), $( ".template.result" ) );
     }
     function stretchSearch() {
-        search( 'stretch query', $( "#stretchResults" ), $( ".template.result" ) );
+        search( 'stretch query', $( "#results" ), $( ".template.result" ) );
     }
     function cardioSearch() {
-        search( 'cardio query', $( "#cardioResults" ), $( ".template.result" ) );
+        search( 'cardio query', $( "#results" ), $( ".template.result" ) );
     }
     function quickSearch() {
-        search( 'quick query', $( "#quickResults" ), $( ".template.result" ) );
+        search( 'quick query', $( "#results" ), $( ".template.result" ) );
     }
 
 
