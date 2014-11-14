@@ -22,18 +22,26 @@ $(function(){
     });
 })
 
-    function strengthSearch() {
-        search( 'strength query', $( "#results" ), $( ".template.result" ) );
-    }
-    function stretchSearch() {
-        search( 'stretch query', $( "#results" ), $( ".template.result" ) );
-    }
-    function cardioSearch() {
-        search( 'cardio query', $( "#results" ), $( ".template.result" ) );
-    }
-    function quickSearch() {
-        search( 'quick query', $( "#results" ), $( ".template.result" ) );
-    }
+function startClick() {
+    $( "input#strength" ).click(function() showClick() );
+}
+
+function showClick() {
+    
+}
+
+function strengthSearch() {
+    search( 'strength query', $( "#results" ), $( ".template.result" ) );
+}
+function stretchSearch() {
+    search( 'stretch query', $( "#results" ), $( ".template.result" ) );
+}
+function cardioSearch() {
+    search( 'cardio query', $( "#results" ), $( ".template.result" ) );
+}
+function quickSearch() {
+    search( 'quick query', $( "#results" ), $( ".template.result" ) );
+}
 
 
 

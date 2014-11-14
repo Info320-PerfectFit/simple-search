@@ -12,14 +12,15 @@
     <meta name="author" content="Caleb Thorsteinson">
     <!-- The title of you're webpage -->
     <title>Perfect Fit</title>
+
+    <!-- Link to your style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-
-    <!-- Link to your style sheet -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
  
     <!-- Scripts to be loaded -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
