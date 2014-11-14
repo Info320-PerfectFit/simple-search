@@ -100,3 +100,10 @@ input#query {
 em {
     font-weight: 700;
 }
+#main {
+    width: 700px;
+}
+.buttonsM {
+    width: 25%;
+    float: left;
+}
