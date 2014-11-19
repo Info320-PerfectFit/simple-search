@@ -26,6 +26,7 @@ h1 {
 .buttons {
     float: left;
     width: 25%;
+    cursor: pointer;
 }
 #searchbar .buttons {
     margin-top: 20px;
@@ -65,6 +66,10 @@ a {
     margin-right: 50px;
 }
 
+.hideme {
+    display: none;
+}
+
 .result {
     margin-bottom: 20px;
 }
@@ -80,41 +85,47 @@ a {
 button#search {
     width: 83px;
     height: 36px;
-    overflow: hidden;
+/*    overflow: hidden;*/
     text-transform: uppercase;
     border: none;
     cursor: pointer;
 }
 
+label {
+    cursor: pointer;
+}
+
 #searchbox {
-    position: absolute;
-    left: 700px;
-    top: 10px;
+    float: right;
+/*    text-align: center;
+    margin-left: auto;
+    margin-right: auto;*/
 }
 
 input#query {
     font-size: 150%;
     width: 65%;
+/*    margin-top: 50px; */
 }
 
-.results {
+/*#results {
     margin-left: 100px;
     margin-right: 100px;
     padding-left: 50px;
     padding-right: 50px;
     border: 5px solid black;
-}
+}*/
 
 em {
     font-weight: 700;
 }
 
 .img-circle {
-    width: 6em;
+    width: 300%;
+    background-color: #90F5DF;
   -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
-           background-color: #90F5DF;
 }
 /*.buttons:nth-child(even) {
     background-color: #90F5DF;
@@ -122,6 +133,20 @@ em {
 .buttons:nth-child(odd) {
     background-color: #E2A9F5;
 }*/
-.title p{
+.title p {
     padding-left: 15px;
+}
+
+.move-button {
+    width: 6em;
+    -webkit-transition: width 3s;
+    -moz-transition: width 3s;
+    -ms-transition: width 3s; 
+    -o-transition: width 3s; 
+    transition: width 3s;
+}
+
+.move-searchbar {
+/*    margin-top: 50px;*/
+    margin-left: 186px;
 }

@@ -8,42 +8,11 @@ $(function(){
 
     $( "button#search" ).click(function() simpleSearch() );
 
-    $( "input#strength" ).click(function() strengthSearch() );
-
-    $( "input#stretch" ).click(function() stretchSearch() );
-
-    $( "input#cardio" ).click(function() cardioSearch() );
-
-    $( "input#quick" ).click(function() quickSearch() );
-
     // Performs search when 'enter' key is pressed
     $( "input#query" ).keypress(function( event ) {
         if ( event.which == 13 ) simpleSearch();
     });
 })
-
-function startClick() {
-    $( "input#strength" ).click(function() showClick() );
-}
-
-function showClick() {
-    
-}
-
-function strengthSearch() {
-    search( 'strength query', $( "#results" ), $( ".template.result" ) );
-}
-function stretchSearch() {
-    search( 'stretch query', $( "#results" ), $( ".template.result" ) );
-}
-function cardioSearch() {
-    search( 'cardio query', $( "#results" ), $( ".template.result" ) );
-}
-function quickSearch() {
-    search( 'quick query', $( "#results" ), $( ".template.result" ) );
-}
-
-
 
 // Input: query string, results container, result HTML template
 // Effect: makes an AJAX call to the server to get the results of the
@@ -55,7 +24,7 @@ function search(query, $container, $template){
         url: 'http://128.95.157.44:8080/solr-example/collection1/select',
         dataType: 'JSONP',
         data: {
-            'q': query,
+            'q': query ,
             'qf': 'content title^3.0',
             'wt': 'json',
             'indent': 'false',
@@ -97,8 +66,8 @@ function maxWords(content, max) {
     var idx;
     var cutContent = "";
     for (idx = 0; idx < words.length; idx++) {
-	cutContent += words[idx];
-	cutContent += (idx + 1 == words.length ? "" : " ");
+    cutContent += words[idx];
+    cutContent += (idx + 1 == words.length ? "" : " ");
     }
     return cutContent + "...";
 }
