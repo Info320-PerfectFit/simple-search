@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-@import url(reset.css);
+@import url(css/reset.css);
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -28,16 +28,21 @@ h1 {
     width: 25%;
     cursor: pointer;
 }
-#searchbar .buttons {
-    margin-top: 20px;
+
+.buttons label {
+    display: block;
 }
+
+/*#searchbar .buttons {
+    margin-top: 20px;
+}*/
 
 input[type="radio"] {
     display: none;
 }
 
-input[type="radio"]:checked {
-    background-color: #d0d0d0;
+input[type="radio"]:checked + img{
+    box-shadow: grey 0px 0px 30px;
 }
 
 h3 {
@@ -64,10 +69,27 @@ a {
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
+/*    -webkit-transition: display 3s;
+    -moz-transition: display 3s;
+    -ms-transition: display 3s;
+    -o-transition: display 3s;
+    -webkit-transition: display 3s;*/
 }
 
 .hideme {
     display: none;
+}
+
+#linkResults {
+    width: 60%;
+    display: inline-block;
+    float: left;
+}
+
+#videoResults {
+    width: 30%;
+    display: inline-block;
+    clear: both;
 }
 
 .result {
@@ -121,8 +143,10 @@ em {
 }
 
 .img-circle {
-    width: 300%;
+    width: 80%;
+    margin-left: 10%;
     background-color: #90F5DF;
+    margin-top: 12%;
   -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
@@ -138,15 +162,12 @@ em {
 }
 
 .move-button {
-    width: 6em;
-    -webkit-transition: width 3s;
-    -moz-transition: width 3s;
-    -ms-transition: width 3s; 
-    -o-transition: width 3s; 
-    transition: width 3s;
-}
-
-.move-searchbar {
-/*    margin-top: 50px;*/
-    margin-left: 186px;
+    width: 30%;
+    margin-left: 35%;
+/*    margin-top: 35px;*/
+    -webkit-transition: width 3s, margin-left 3s, margin-top 3s;
+    -moz-transition: width 3s, margin-left 3s, margin-top 3s;
+    -ms-transition: width 3s, margin-left 3s, margin-top 3s; 
+    -o-transition: width 3s, margin-left 3s, margin-top 3s; 
+    transition: width 3s, margin-left 3s, margin-top 3s;
 }

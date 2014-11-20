@@ -3,10 +3,12 @@ $(function(){
     // Shortcut function that performs search with the correct parameters.
     // Can be called without any arguments inline 
     function simpleSearch() {
-        search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
+        search( $( "input#query" ).val(), $( "#linkResults " ), $( ".template.result" ) );
     };
 
-    $( "button#search" ).click(function() simpleSearch() );
+    $( "button#search" ).click(function() {
+        simpleSearch();
+    });
 
     // Performs search when 'enter' key is pressed
     $( "input#query" ).keypress(function( event ) {
@@ -34,6 +36,16 @@ function search(query, $container, $template){
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
         }
+    });
+    // YouTube video search
+    var request = gapi.client.youtube.search.list({
+        q: query,
+        part: 'snippet'
+    });
+
+    request.execute(function(response) {
+        var str = JSON.stringify(response.result);
+        $('#videoResults').html('<pre>' + str + '</pre>');
     });
 }
 
