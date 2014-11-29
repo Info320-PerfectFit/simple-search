@@ -2,44 +2,77 @@ $(document).ready(function(){
     $('#strength').click(function() {
         $('.img-circle').addClass('move-button');
         $('#results').removeClass('hideme');
-        $('a#tab1').text('Arms');
-        $('a#tab2').text('Legs');
-        $('a#tab3').text('Core');
+        $('h3.prompt').addClass('firstPrompt');
+        $('img.img-circle').hover(
+            function() {
+                $(this).addClass('change-hover');
+            }, function() {
+                $(this).removeClass('change-hover');
+        });
+        $('a#tab2').text('Arms');
+        $('a#tab3').text('Legs');
+        $('a#tab4').text('Core');
+        if (!$('li').first().hasClass('active')) {
+	    	$('.opt').removeClass('active');
+	    	$('li').first().addClass('active');
+        }
     });
     $('#stretch').click(function() {
         $('.img-circle').addClass('move-button');
         $('#results').removeClass('hideme');
-        $('a#tab1').text('Upper Body');
-        $('a#tab2').text('Core');
-        $('a#tab3').text('Lower Body');
+        $('h3.prompt').addClass('firstPrompt');
+                $('img.img-circle').hover(
+            function() {
+                $(this).addClass('change-hover');
+            }, function() {
+                $(this).removeClass('change-hover');
+        });
+        $('a#tab2').text('Upper Body');
+        $('a#tab3').text('Core');
+        $('a#tab4').text('Lower Body');
+        if (!$('li').first().hasClass('active')) {
+	    	$('.opt').removeClass('active');
+	    	$('li').first().addClass('active');
+        }
     });
     $('#cardio').click(function() {
         $('.img-circle').addClass('move-button');
         $('#results').removeClass('hideme');
-        $('a#tab1').text('At Home');
-        $('a#tab2').text('In The Gym');
-        $('a#tab3').text('Outdoors');
+        $('h3.prompt').addClass('firstPrompt');
+                $('img.img-circle').hover(
+            function() {
+                $(this).addClass('change-hover');
+            }, function() {
+                $(this).removeClass('change-hover');
+        });
+        $('a#tab2').text('At Home');
+        $('a#tab3').text('In The Gym');
+        $('a#tab4').text('Outdoors');
+        if (!$('li').first().hasClass('active')) {
+	    	$('.opt').removeClass('active');
+	    	$('li').first().addClass('active');
+        }  
     });
     $('#quick').click(function() {
         $('.img-circle').addClass('move-button');
         $('#results').removeClass('hideme');
-        $('a#tab1').text('5-10 Min');
-        $('a#tab2').text('10-15 Min');
-        $('a#tab3').text('15-30 Min');
+        $('h3.prompt').addClass('firstPrompt');
+                $('img.img-circle').hover(
+            function() {
+                $(this).addClass('change-hover');
+            }, function() {
+                $(this).removeClass('change-hover');
+        });
+        $('a#tab2').text('5-10 Min');
+        $('a#tab3').text('10-15 Min');
+        $('a#tab4').text('15-30 Min');
+        if (!$('li').first().hasClass('active')) {
+	    	$('.opt').removeClass('active');
+	    	$('li').first().addClass('active');
+        }   
     });
-
-
+    $('.opt').click(function() {
+    	$('.opt').removeClass('active');
+    	$(this).addClass('active');
+    });
 });
-
-function search() {
-  var q = $('#query').val();
-  var request = gapi.client.youtube.search.list({
-    q: q,
-    part: 'snippet'
-  });
-
-  request.execute(function(response) {
-    var str = JSON.stringify(response.result);
-    $('#search-container').html('<pre>' + str + '</pre>');
-  });
-}

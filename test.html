@@ -41,6 +41,7 @@
   <body>
     <div class="container">
       <h1>Perfect Fit</h1>
+      <h3 class="prompt">What type of workout are you looking for?</h3>
       <div id="searchbar">
         <div class="buttons">
           <label id="strength">
@@ -74,10 +75,11 @@
       <!-- Container where results will be filled in -->
       <div id="results" class="hideme">
         <div class="tabbable"> <!-- Only required for left/right tabs -->
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab1" id="tab1" data-toggle="tab">Arms</a></li>
-            <li><a href="#tab2" id="tab2" data-toggle="tab">Legs</a></li>
-            <li><a href="#tab3" id="tab3" data-toggle="tab">Core</a></li>
+          <ul class="nav nav-tabs" id="myTab">
+            <li class="opt active"><a href="#tab1" id="tab1" data-toggle="tab">All</a></li>
+            <li class="opt"><a href="#tab2" id="tab2" data-toggle="tab"></a></li>
+            <li class="opt"><a href="#tab3" id="tab3" data-toggle="tab"></a></li>
+            <li class="opt"><a href="#tab4" id="tab4" data-toggle="tab"></a></li>
             <li id="searchbox">          
               <div>
                 <input id="query" type="text" placeholder="Search here..." required></input>
@@ -86,8 +88,8 @@
             </li>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane active" id="tab1">
-              <div id="linkResults">
+            <div id="linkResults">
+              <div class="tab-pane active" id="tab1">
                 <div class="title">
                   <a href="http://www.mensfitness.com/">
                     <h3>Men's Fitness</h3>
@@ -95,13 +97,22 @@
                   <p>resutls results results</p>
                 </div>
                 <div class="title">
-                    <a href="http://www.bodybuilding.com/">
-                      <h3>BodyBuilding.com</h3>
-                    </a>
-                    <p>resutls results results</p>
-                  </div>
+                  <a href="http://www.bodybuilding.com/">
+                    <h3>BodyBuilding.com</h3>
+                  </a>
+                  <p>resutls results results</p>
                 </div>
               </div>
+              <div class="tab-pane">
+                <div class="title">
+                  <a href="http://www.womenshealthmag.com/">
+                    <h3>Women's Health</h3>
+                  </a>
+                  <p>resutls results results</p>
+                </div>
+              </div>
+            </div>
+            <div id="videoResults">
               <div class="tab-pane" id="tab2">
                 <div class="title">
                   <a href="http://www.womenshealthmag.com/">
@@ -110,19 +121,14 @@
                   <p>resutls results results</p>
                 </div>
               </div>
-              <div id="videoResults">
-                <div class="tab-pane" id="tab2">
-                  <div class="title">
-                    <a href="http://www.womenshealthmag.com/">
-                      <h3>Women's Health</h3>
-                    </a>
-                    <p>resutls results results</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+        <script>
+          $(function () {
+            $('#myTab a:last').tab('show');
+          })
+        </script>
 
       </div>
       <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->

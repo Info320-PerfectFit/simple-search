@@ -23,7 +23,7 @@ $(function(){
 function search(query, $container, $template){
     $.ajax({
         type: 'GET',
-        url: 'http://128.95.157.44:8080/solr-example/collection1/select',
+        url: 'http://is-info320t6.ischool.uw.edu:8080/solr-example/collection1/select',
         dataType: 'JSONP',
         data: {
             'q': query ,
@@ -37,7 +37,7 @@ function search(query, $container, $template){
             renderResults(data.response.docs, $container, $template);
         }
     });
-    // YouTube video search
+    //YouTube video search
     var request = gapi.client.youtube.search.list({
         q: query,
         part: 'snippet'
@@ -45,6 +45,7 @@ function search(query, $container, $template){
 
     request.execute(function(response) {
         var str = JSON.stringify(response.result);
+        console.log(response);
         $('#videoResults').html('<pre>' + str + '</pre>');
     });
 }

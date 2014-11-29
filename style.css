@@ -7,8 +7,10 @@ body {
     font-size: 15px;
     line-height: 1.2;
     color: #333;
-    background-color: #5E6160;
-
+    background-color: black;
+    background-image: url('fitness.jpg');
+    background-position: 635px -155px;
+    background-repeat: repeat-x;
 }
 
 h1 {
@@ -18,6 +20,23 @@ h1 {
     text-shadow: 2px 2px #E6622E;
     color: #F29B22;
     margin-bottom: 10px;
+}
+
+.prompt {
+    font-size: 225%;
+    text-align: center;
+    color: dark grey;
+    margin: 50px;
+}
+
+.firstPrompt {
+    font-size: 150%;
+    margin-bottom: 10px;
+    -webkit-transition: font-size 2s, margin-bottom 2s;
+    -moz-transition: font-size 2s, margin-bottom 2s;
+    -ms-transition: font-size 2s, margin-bottom 2s;
+    -o-transition: font-size 2s, margin-bottom 2s;
+    transition: font-size 2s, margin-bottom 2s;
 }
 
 .nav {
@@ -41,8 +60,14 @@ input[type="radio"] {
     display: none;
 }
 
+img.img-circle:hover {
+    box-shadow: grey 0px 0px 50px;
+/*    width: 85%;*/
+}
+
 input[type="radio"]:checked + img{
-    box-shadow: grey 0px 0px 30px;
+    box-shadow: grey 0px 0px 50px;
+    width: 35%;
 }
 
 h3 {
@@ -81,13 +106,13 @@ a {
 }
 
 #linkResults {
-    width: 60%;
+    width: 65%;
     display: inline-block;
     float: left;
 }
 
 #videoResults {
-    width: 30%;
+    width: 35%;
     display: inline-block;
     clear: both;
 }
@@ -102,11 +127,12 @@ a {
     padding-bottom: 100%;
     width: 70%;
     background-color: #FCFCFC;
+    opacity: 0.85;
 }
 
 button#search {
-    width: 83px;
-    height: 36px;
+    width: 75px;
+    height: 25px;
 /*    overflow: hidden;*/
     text-transform: uppercase;
     border: none;
@@ -125,7 +151,6 @@ label {
 }
 
 input#query {
-    font-size: 150%;
     width: 65%;
 /*    margin-top: 50px; */
 }
@@ -147,9 +172,9 @@ em {
     margin-left: 10%;
     background-color: #90F5DF;
     margin-top: 12%;
-  -webkit-border-radius: 500px;
-     -moz-border-radius: 500px;
-          border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
 }
 /*.buttons:nth-child(even) {
     background-color: #90F5DF;
@@ -165,9 +190,18 @@ em {
     width: 30%;
     margin-left: 35%;
 /*    margin-top: 35px;*/
-    -webkit-transition: width 3s, margin-left 3s, margin-top 3s;
-    -moz-transition: width 3s, margin-left 3s, margin-top 3s;
-    -ms-transition: width 3s, margin-left 3s, margin-top 3s; 
-    -o-transition: width 3s, margin-left 3s, margin-top 3s; 
-    transition: width 3s, margin-left 3s, margin-top 3s;
+    -webkit-transition: width 2s, margin-left 2s, margin-top 2s;
+    -moz-transition: width 2s, margin-left 2s, margin-top 2s;
+    -ms-transition: width 2s, margin-left 2s, margin-top 2s; 
+    -o-transition: width 2s, margin-left 2s, margin-top 2s; 
+    transition: width 2s, margin-left 2s, margin-top 2s;
+}
+
+.change-hover {
+    width: 35%;
+    -webkit-transition: width 0.25s;
+    -moz-transition: width 0.25s;
+    -ms-transition: width 0.25s;
+    -o-transition: width 0.25s;
+    transition: width 0.25s;
 }
