@@ -37,17 +37,6 @@ function search(query, $container, $template){
             renderResults(data.response.docs, $container, $template);
         }
     });
-    //YouTube video search
-    var request = gapi.client.youtube.search.list({
-        q: query,
-        part: 'snippet'
-    });
-
-    request.execute(function(response) {
-        var str = JSON.stringify(response.result);
-        console.log(response);
-        $('#videoResults').html('<pre>' + str + '</pre>');
-    });
 }
 
 // Input: JSON array of results, results container, result HTML template
