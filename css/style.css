@@ -73,6 +73,8 @@ a {
     padding-bottom: 100%;
     width: 70%;
     background-color: #FCFCFC;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 button#search {
