@@ -62,7 +62,7 @@ input[type="radio"] {
 
 img.img-circle:hover {
     box-shadow: grey 0px 0px 50px;
-/*    width: 85%;*/
+/*    width: 35%;*/
 }
 
 input[type="radio"]:checked + img{
@@ -95,9 +95,9 @@ a {
 }
 
 #results {
-    margin-top: 175px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 19%;
+    margin-left: 3%;
+    margin-right: 3%;
 /*    -webkit-transition: display 3s;
     -moz-transition: display 3s;
     -ms-transition: display 3s;
@@ -183,14 +183,6 @@ input#query {
 /*    margin-top: 50px; */
 }
 
-/*#results {
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: 5px solid black;
-}*/
-
 em {
     font-weight: 700;
 }
@@ -250,6 +242,10 @@ em {
     -ms-transition: opacity 0.25s;
     -o-transition: opacity 0.25s;
     transition: opacity 0.25s;
+}
+
+.keepName {
+    opacity: 1;
 }
 
 .move-button {

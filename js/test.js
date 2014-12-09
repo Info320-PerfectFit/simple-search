@@ -13,10 +13,11 @@ $(document).ready(function(){
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
-        $('div.imgTitle').removeClass('showName');
-        $('div#workout1').addClass('showName');
+        $('.imgTitle').removeClass('keepName');
+        $('div#workout1').addClass('keepName');
         $('.sectionResults').removeClass('showSection');
         $('div#strengthResults').addClass('showSection');
+        $('div.result').removeClass('filter');
         $('img.img-circle').hover(
             function() {
                 $(this).addClass('change-hover');
@@ -54,10 +55,11 @@ $(document).ready(function(){
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
-        $('div.imgTitle').removeClass('showName');
-        $('div#workout2').addClass('showName');
+        $('div.imgTitle').removeClass('keepName');
+        $('div#workout2').addClass('keepName');
         $('.sectionResults').removeClass('showSection');
         $('div#stretchResults').addClass('showSection');
+        $('div.result').removeClass('filter');
         $('img.img-circle').hover(
             function() {
                 $(this).addClass('change-hover');
@@ -95,10 +97,11 @@ $(document).ready(function(){
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
-        $('div.imgTitle').removeClass('showName');
-        $('div#workout3').addClass('showName');
+        $('div.imgTitle').removeClass('keepName');
+        $('div#workout3').addClass('keepName');
         $('.sectionResults').removeClass('showSection');
         $('div#cardioResults').addClass('showSection');
+        $('div.result').removeClass('filter');
         $('img.img-circle').hover(
             function() {
                 $(this).addClass('change-hover');
@@ -136,10 +139,11 @@ $(document).ready(function(){
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
-        $('div.imgTitle').removeClass('showName');
-        $('div#workout4').addClass('showName');
+        $('div.imgTitle').removeClass('keepName');
+        $('div#workout4').addClass('keepName');
         $('.sectionResults').removeClass('showSection');
         $('div#quickResults').addClass('showSection');
+        $('div.result').removeClass('filter');
         $('img.img-circle').hover(
             function() {
                 $(this).addClass('change-hover');
