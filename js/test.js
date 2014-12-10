@@ -1,15 +1,15 @@
 $(document).ready(function(){
-    $('img.img-circle').hover(
-        function() {
-            $(this).addClass('main-hover');
-            $(this).next().addClass('showName');
-        }, function() {
-            $(this).removeClass('main-hover');
-            $(this).next().removeClass('showName');
-    });
+    // $('img.circle').hover(
+    //     function() {
+    //         $(this).addClass('main-hover');
+    //         $(this).next().addClass('showName');
+    //     }, function() {
+    //         $(this).removeClass('main-hover');
+    //         $(this).next().removeClass('showName');
+    // });
     $('#strength').click(function() {
-        search( 'easy beginner weight strength workouts', $( "#linkResults " ), $( ".template.result" ) );
-        $('.img-circle').addClass('move-button');
+        search( 'weights', $( "#linkResults " ), $( ".template.result" ) );
+        $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
@@ -18,14 +18,14 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#strengthResults').addClass('showSection');
         $('div.result').removeClass('filter');
-        $('img.img-circle').hover(
-            function() {
-                $(this).addClass('change-hover');
-                $(this).next().addClass('showName');
-            }, function() {
-                $(this).removeClass('change-hover');
-                $(this).next().removeClass('showName');
-        });
+        // $('img.img-circle').hover(
+        //     function() {
+        //         $(this).addClass('change-hover');
+        //         $(this).next().addClass('showName');
+        //     }, function() {
+        //         $(this).removeClass('change-hover');
+        //         $(this).next().removeClass('showName');
+        // });
         $('a#tab2').text('Arms');
         $('a#tab3').text('Legs');
         $('a#tab4').text('Core');
@@ -33,14 +33,17 @@ $(document).ready(function(){
             $('div.result').removeClass('filter');
         });
         $('a#tab2').click(function() {
+            // search( 'arms', $( "#linkResults " ), $( ".template.result" ) );
             $('div.result').addClass('filter');
             $('.arms').removeClass('filter');
         });
         $('a#tab3').click(function() {
+            // search( 'legs', $( "#linkResults " ), $( ".template.result" ) );
             $('div.result').addClass('filter');
             $('.legs').removeClass('filter');
         });
         $('a#tab4').click(function() {
+            // search( 'core', $( "#linkResults " ), $( ".template.result" ) );
             $('div.result').addClass('filter');
             $('.core').removeClass('filter');
         });
@@ -50,8 +53,8 @@ $(document).ready(function(){
         }
     });
     $('#stretch').click(function() {
-        search( 'easy beginner stretch workouts', $( "#linkResults " ), $( ".template.result" ) );
-        $('.img-circle').addClass('move-button');
+        search( 'stretch', $( "#linkResults" ), $( ".template.result" ) );
+        $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
@@ -60,14 +63,14 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#stretchResults').addClass('showSection');
         $('div.result').removeClass('filter');
-        $('img.img-circle').hover(
-            function() {
-                $(this).addClass('change-hover');
-                $(this).next().addClass('showName');
-            }, function() {
-                $(this).removeClass('change-hover');
-                $(this).next().removeClass('showName');
-        });
+        // $('img.img-circle').hover(
+        //     function() {
+        //         $(this).addClass('change-hover');
+        //         $(this).next().addClass('showName');
+        //     }, function() {
+        //         $(this).removeClass('change-hover');
+        //         $(this).next().removeClass('showName');
+        // });
         $('a#tab2').text('Upper Body');
         $('a#tab3').text('Core');
         $('a#tab4').text('Lower Body');
@@ -92,8 +95,8 @@ $(document).ready(function(){
         }
     });
     $('#cardio').click(function() {
-        search( 'easy beginner stretch workouts', $( "#linkResults " ), $( ".template.result" ) );
-        $('.img-circle').addClass('move-button');
+        search( 'cardio', $( "#linkResults " ), $( ".template.result" ) );
+        $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
@@ -102,14 +105,14 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#cardioResults').addClass('showSection');
         $('div.result').removeClass('filter');
-        $('img.img-circle').hover(
-            function() {
-                $(this).addClass('change-hover');
-                $(this).next().addClass('showName');
-            }, function() {
-                $(this).removeClass('change-hover');
-                $(this).next().removeClass('showName');
-        });
+        // $('img.img-circle').hover(
+        //     function() {
+        //         $(this).addClass('change-hover');
+        //         $(this).next().addClass('showName');
+        //     }, function() {
+        //         $(this).removeClass('change-hover');
+        //         $(this).next().removeClass('showName');
+        // });
         $('a#tab2').text('At Home');
         $('a#tab3').text('In The Gym');
         $('a#tab4').text('Outdoors');
@@ -134,8 +137,8 @@ $(document).ready(function(){
         }  
     });
     $('#quick').click(function() {
-        search( 'easy beginner stretch workouts', $( "#linkResults " ), $( ".template.result" ) );
-        $('.img-circle').addClass('move-button');
+        search( 'quick', $( "#linkResults " ), $( ".template.result" ) );
+        $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
         $('div.container').addClass('afterHeight');
@@ -144,14 +147,14 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#quickResults').addClass('showSection');
         $('div.result').removeClass('filter');
-        $('img.img-circle').hover(
-            function() {
-                $(this).addClass('change-hover');
-                $(this).next().addClass('showName');
-            }, function() {
-                $(this).removeClass('change-hover');
-                $(this).next().removeClass('showName');
-        });
+        // $('img.img-circle').hover(
+        //     function() {
+        //         $(this).addClass('change-hover');
+        //         $(this).next().addClass('showName');
+        //     }, function() {
+        //         $(this).removeClass('change-hover');
+        //         $(this).next().removeClass('showName');
+        // });
         $('a#tab2').text('5-10 Min');
         $('a#tab3').text('10-15 Min');
         $('a#tab4').text('15-30 Min');

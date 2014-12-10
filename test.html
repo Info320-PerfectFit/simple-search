@@ -40,34 +40,48 @@
   </head>
   <body>
     <div class="container">
-      <h1>Perfect Fit</h1>
+      <div>
+        <img src="logo.png" id="titleIcon" alt="PerfectFit" />
+      </div>
       <h2 class="prompt">What type of workout are you looking for?</h2>
       <div id="searchbar">
         <div class="buttons">
           <label id="strength">
             <input name="options" type="radio" />
-            <img src="dumbbell16.png" alt="Strength Training" class="img-circle" />
+            <div id="strengthIcon" class="buttonWrap">
+              <img src="weights.png" alt="Strength Training" class="circle" />
+              <img src="weights2.png" alt="Strength Training" class="circle hideIcon" />
+            </div>
             <div id="workout1" class="imgTitle"><p>Strength Training</p></div>
           </label>
         </div>
         <div class="buttons">
           <label id="stretch">
             <input name="options" type="radio" />
-            <img src="stretching1.png" alt="Stretching"  class="img-circle"/>
+            <div id="stretchIcon" class="buttonWrap">
+              <img src="stretch.png" alt="Stretching"  class="circle"/>
+              <img src="stretch2.png" alt="Strength Training" class="circle hideIcon" />
+            </div>
             <div id="workout2" class="imgTitle"><p>Stretching</p></div>
           </label>
         </div>
         <div class="buttons">
           <label id="cardio">
             <input name="options" type="radio" />
-            <img src="runer.png" alt="Cardio Training" class="img-circle"/>
+            <div id="cardioIcon" class="buttonWrap">
+              <img src="cardio.png" alt="Cardio Training" class="circle"/>
+              <img src="cardio2.png" alt="Strength Training" class="circle hideIcon" />
+            </div>
             <div id="workout3" class="imgTitle"><p>Cardio Training</p></div>
           </label>
         </div>
         <div class="buttons">
           <label id="quick">
             <input name="options" type="radio" />
-            <img src="stopwatch1.png" alt="Quick Workouts" class="img-circle"/>
+            <div id="quickIcon" class="buttonWrap">
+              <img src="quick.png" alt="Quick Workouts" class="circle"/>
+              <img src="quick2.png" alt="Strength Training" class="circle hideIcon" />
+            </div>
             <div id="workout4" class="imgTitle"><p>Quick Workouts</p></div>
           </label>
         </div>
