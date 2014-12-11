@@ -31,10 +31,14 @@ function search(query, $container, $template){
             'wt': 'json',
             'indent': 'false',
             'defType': 'edismax',
+            'hl': 'true',
+            'hl.fl': 'title content',
+            'hl.simple.pre': "<em>",
+            'hl.simple.post': "</em>"
         },
         jsonp: 'json.wrf',
         success: function (data) {
-            renderResults(data.response.docs, $container, $template);
+            renderResults(data.response.docs, data.highlighting, $container, $template);
         }
     });
 }
@@ -43,7 +47,7 @@ function search(query, $container, $template){
 // Effect: Replaces results container with new results, and renders
 // the appropriate HTML
 // Output: void
-function renderResults(docs, $container, $template){
+function renderResults(docs, highlighting, $container, $template){
     $container.empty(); // If there are any previous results, remove them
     var result;
     $.each(docs, function(index, doc){
@@ -53,7 +57,7 @@ function renderResults(docs, $container, $template){
             .find( "h3" )
             .append( doc.title );
         result.find( ".url" ).append( doc.url );
-        result.find( ".content" ).append( maxWords(doc.content, 30) );
+        result.find( ".content" ).append( highlighting[doc.url].content );
         result.removeClass( "template" );
         $container.append(result);
     });
