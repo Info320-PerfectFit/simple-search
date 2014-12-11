@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $('#strength').click(function() {
         search( 'weights', $( "#linkResults " ), $( ".template.result" ) );
+        $('.thirdPrompt').removeClass('showThird');
+        $('.secondPrompt').addClass('showSecond');
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
@@ -16,21 +18,29 @@ $(document).ready(function(){
         $('a#tab1').click(function() {
             search( 'weights', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab2').click(function() {
             search( 'arms', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.arms').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab3').click(function() {
             search( 'legs', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.legs').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab4').click(function() {
             search( 'core', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.core').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         if (!$('li').first().hasClass('active')) {
             $('.opt').removeClass('active');
@@ -39,6 +49,8 @@ $(document).ready(function(){
     });
     $('#stretch').click(function() {
         search( 'stretch', $( "#linkResults" ), $( ".template.result" ) );
+        $('.thirdPrompt').removeClass('showThird');
+        $('.secondPrompt').addClass('showSecond');
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
@@ -54,21 +66,29 @@ $(document).ready(function(){
         $('a#tab1').click(function() {
             search( 'stretch', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab2').click(function() {
             search( 'yoga', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.upper').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab3').click(function() {
             search( 'pilates', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.mid').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab4').click(function() {
             search( 'vinyasa', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.lower').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         if (!$('li').first().hasClass('active')) {
 	    	$('.opt').removeClass('active');
@@ -77,6 +97,8 @@ $(document).ready(function(){
     });
     $('#cardio').click(function() {
         search( 'cardio', $( "#linkResults " ), $( ".template.result" ) );
+        $('.thirdPrompt').removeClass('showThird');
+        $('.secondPrompt').addClass('showSecond');
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
@@ -92,21 +114,29 @@ $(document).ready(function(){
         $('a#tab1').click(function() {
             search( 'cardio', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab2').click(function() {
             search( 'dance', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.home').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab3').click(function() {
             search( 'tredmill', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.gym').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab4').click(function() {
             search( 'cycling', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.out').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         if (!$('li').first().hasClass('active')) {
 	    	$('.opt').removeClass('active');
@@ -115,6 +145,8 @@ $(document).ready(function(){
     });
     $('#quick').click(function() {
         search( 'quick', $( "#linkResults " ), $( ".template.result" ) );
+        $('.thirdPrompt').removeClass('showThird');
+        $('.secondPrompt').addClass('showSecond');
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
@@ -130,21 +162,29 @@ $(document).ready(function(){
         $('a#tab1').click(function() {
             search( 'quick', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab2').click(function() {
             search( 'intense', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.short').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab3').click(function() {
             search( 'sprint', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.middle').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         $('a#tab4').click(function() {
             search( 'endurance', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.long').removeClass('filter');
+            $('.secondPrompt').removeClass('showSecond');
+            $('.thirdPrompt').addClass('showThird');
         });
         if (!$('li').first().hasClass('active')) {
 	    	$('.opt').removeClass('active');
