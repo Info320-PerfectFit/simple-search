@@ -53,11 +53,7 @@ function renderResults(docs, $container, $template){
             .find( "h3" )
             .append( doc.title );
         result.find( ".url" ).append( doc.url );
-<<<<<<< HEAD
-        result.find( ".content" ).append( maxWords(doc.content, 30s) );
-=======
         result.find( ".content" ).append( maxWords(doc.content, 30) );
->>>>>>> codeBranch
         result.removeClass( "template" );
         $container.append(result);
     });
