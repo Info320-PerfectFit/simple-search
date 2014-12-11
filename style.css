@@ -2,7 +2,7 @@
 @import url(css/reset.css);
 
 body {
-    font-family: "Open Sans", sans-serif;
+    `font-family: 'Pontano Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.2;
