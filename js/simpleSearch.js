@@ -53,7 +53,7 @@ function renderResults(docs, $container, $template){
             .find( "h3" )
             .append( doc.title );
         result.find( ".url" ).append( doc.url );
-        result.find( ".content" ).append( maxWords(doc.content, 100) );
+        result.find( ".content" ).append( maxWords(doc.content, 30s) );
         result.removeClass( "template" );
         $container.append(result);
     });
