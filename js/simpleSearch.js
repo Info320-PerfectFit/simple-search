@@ -101,7 +101,7 @@ function constructSuggestions(data) {
             $(this).css("font-weight", "");
         });
     } else {
-        $("#suggestions").show();
+        $("#suggestions").hide();
     };
 }
 

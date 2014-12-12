@@ -212,12 +212,7 @@ $(document).ready(function(){
         }   
     });
     $(".opt").click(function() {
-        hideSuggestions();
     	$('.opt').removeClass('active');
     	$(this).addClass('active');
     });
-
-    function hideSuggestions() {
-        $("#suggestions").hide();
-    }
 });
