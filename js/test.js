@@ -77,7 +77,7 @@ $(document).ready(function(){
             $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         });
         $('a#tab2').click(function() {
-            search( 'yoga', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'upper', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.upper').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
@@ -85,7 +85,7 @@ $(document).ready(function(){
             $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab3').click(function() {
-            search( 'pilates', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'core', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.mid').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
@@ -93,7 +93,7 @@ $(document).ready(function(){
             $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab4').click(function() {
-            search( 'vinyasa', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'lower', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.lower').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
@@ -130,7 +130,7 @@ $(document).ready(function(){
             $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         });
         $('a#tab2').click(function() {
-            search( 'dance', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'home', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.home').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
@@ -138,7 +138,7 @@ $(document).ready(function(){
             $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab3').click(function() {
-            search( 'tredmill', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'gym', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.gym').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
@@ -146,7 +146,7 @@ $(document).ready(function(){
             $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab4').click(function() {
-            search( 'cycling', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'out', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.out').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
