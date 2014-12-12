@@ -34,10 +34,14 @@ function search(query, $container, $template){
             'hl': 'true',
             'hl.fl': 'title content',
             'hl.simple.pre': "<em>",
-            'hl.simple.post': "</em>"
+            'hl.simple.post': "</em>",
+            'stopwords' : "true",
+            "ps": "4",
+            "lowercaseOperators": "true"
         },
         jsonp: 'json.wrf',
         success: function (data) {
+            constructSuggestions(data.spellcheck.suggestions);
             renderResults(data.response.docs, data.highlighting, $container, $template);
         }
     });
@@ -76,4 +80,33 @@ function maxWords(content, max) {
     cutContent += (idx + 1 == words.length ? "" : " ");
     }
     return cutContent + "...";
+}
+
+function constructSuggestions(data) {
+    if (data.length > 0) {
+        $("#suggestions").show();
+        var pString = "Did you mean:"
+        console.log(data);
+        $.each(data[1].suggestion, function(index, info) {
+            console.log(info + ", " + info.suggestion);
+            pString += " <span class=\"singleSuggestion\">" + info + "</span>";
+        });
+        pString += " ?"
+        $("#suggestions").html(pString);
+        $(".singleSuggestion").click(suggestionSearch);
+        $(".singleSuggestion").mouseenter(function () {
+            $(this).css("font-weight", "bold");
+        });
+        $(".singleSuggestion").mouseleave(function () {
+            $(this).css("font-weight", "");
+        });
+    } else {
+        $("#suggestions").show();
+    };
+}
+
+function suggestionSearch() {
+    var html = $(this).html();
+    $( "input#query" ).val(html)
+    search( html, $( "#linkResults " ), $( ".template.result" ) )
 }

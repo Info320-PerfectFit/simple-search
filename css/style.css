@@ -92,6 +92,11 @@ button#search {
     margin-right: auto;
 }
 
+#suggestions {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 input#query {
     font-size: 150%;
     width: 65%;

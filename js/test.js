@@ -211,8 +211,13 @@ $(document).ready(function(){
 	    	$('li').first().addClass('active');
         }   
     });
-    $('.opt').click(function() {
+    $(".opt").click(function() {
+        hideSuggestions();
     	$('.opt').removeClass('active');
     	$(this).addClass('active');
     });
+
+    function hideSuggestions() {
+        $("#suggestions").hide();
+    }
 });
