@@ -6,7 +6,7 @@ $(document).ready(function(){
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
-        $('div.container').addClass('afterHeight');
+        $('div.container').addClass('changeHeight');
         $('.imgTitle').removeClass('keepName');
         $('div#workout1').addClass('keepName');
         $('.sectionResults').removeClass('showSection');
@@ -59,7 +59,7 @@ $(document).ready(function(){
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
-        $('div.container').addClass('afterHeight');
+        $('div.container').addClass('changeHeight');
         $('div.imgTitle').removeClass('keepName');
         $('div#workout2').addClass('keepName');
         $('.sectionResults').removeClass('showSection');
@@ -112,7 +112,7 @@ $(document).ready(function(){
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
-        $('div.container').addClass('afterHeight');
+        $('div.container').addClass('changeHeight');
         $('div.imgTitle').removeClass('keepName');
         $('div#workout3').addClass('keepName');
         $('.sectionResults').removeClass('showSection');
@@ -165,7 +165,7 @@ $(document).ready(function(){
         $('.circle').addClass('move-button');
         $('#results').removeClass('hideme');
         $('h2.prompt').addClass('firstPrompt');
-        $('div.container').addClass('afterHeight');
+        $('div.container').addClass('changeHeight');
         $('div.imgTitle').removeClass('keepName');
         $('div#workout4').addClass('keepName');
         $('.sectionResults').removeClass('showSection');

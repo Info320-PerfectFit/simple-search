@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 
     <!-- Link to your style sheet -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
     <!-- Scripts to be loaded -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -26,7 +26,7 @@
     <script src="js/simpleSearch.js" type="text/javascript"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="auth.js"></script>
+    <script src="js/auth.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
 
     <!-- Google Analytics Section -->
@@ -44,7 +44,9 @@
   <body>
     <div class="container">
       <div>
-        <img src="logo.png" id="titleIcon" alt="PerfectFit" />
+        <a href="perfectfit.info320.ischool.uw.edu">
+          <img src="logo.png" id="titleIcon" alt="PerfectFit" />
+        </a>
       </div>
       <h2 class="prompt">What type of workout are you looking for?
       </h2>
@@ -96,13 +98,9 @@
           </label>
         </div>
       </div>
-<!--       <div id="searchbox">
-        <input id="query" type="text" placeholder="Search here..." required></input>
-        <button id="search">Search</button>
-      </div> -->
       <!-- Container where results will be filled in -->
       <div id="results" class="hideme">
-        <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <div class="tabbable">
           <ul class="nav nav-tabs" id="myTab">
             <li class="opt active"><a id="tab1" data-toggle="tab">All</a></li>
             <li class="opt"><a id="tab2" data-toggle="tab"></a></li>
@@ -624,15 +622,12 @@
                 </div>
               </div>
               <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
                 var tag2 = document.createElement('script');
 
                 tag2.src = "https://www.youtube.com/iframe_api";
                 var firstScriptTag2 = document.getElementsByTagName('script')[0];
                 firstScriptTag2.parentNode.insertBefore(tag2, firstScriptTag2);
 
-                // 3. This function creates an <iframe> (and YouTube player)
-                //    after the API code downloads.
                 var player1;
                 var player2;
                 var player3;
@@ -698,572 +693,318 @@
                   player1 = new YT.Player('video1', {
                     height: '390',
                     width: '640',
-                    videoId: 'wtLkKoDJE0g',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'wtLkKoDJE0g'
                   });
                   player2 = new YT.Player('video2', {
                     height: '390',
                     width: '640',
-                    videoId: '8kwwiB0-49M',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '8kwwiB0-49M'
                   });
                   player3 = new YT.Player('video3', {
                     height: '390',
                     width: '640',
-                    videoId: 'Y7w65NMoGEI',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'Y7w65NMoGEI'
                   });
                   player4 = new YT.Player('video4', {
                     height: '390',
                     width: '640',
-                    videoId: 'Gze8oMuj4as',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'Gze8oMuj4as'
                   });
                   player5 = new YT.Player('video5', {
                     height: '390',
                     width: '640',
-                    videoId: 'tFzx5WIjzd4',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'tFzx5WIjzd4'
                   });
                   player6 = new YT.Player('video6', {
                     height: '390',
                     width: '640',
-                    videoId: '-b9nC6Ry-Kg',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '-b9nC6Ry-Kg'
                   });
                   player7 = new YT.Player('video7', {
                     height: '390',
                     width: '640',
-                    videoId: 'kYZsYUx8RXU',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'kYZsYUx8RXU'
                   });
                   player8 = new YT.Player('video8', {
                     height: '390',
                     width: '640',
-                    videoId: 'U0bhE67HuDY',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'U0bhE67HuDY'
                   });
                   player9 = new YT.Player('video9', {
                     height: '390',
                     width: '640',
-                    videoId: '77VuIh_tFr0',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '77VuIh_tFr0'
                   });
                   player10 = new YT.Player('video10', {
                     height: '390',
                     width: '640',
-                    videoId: '7qM-DRn10SE',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '7qM-DRn10SE'
                   });
                   player11 = new YT.Player('video11', {
                     height: '390',
                     width: '640',
-                    videoId: '1919eTCoESo',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '1919eTCoESo'
                   });
                   player12 = new YT.Player('video12', {
                     height: '390',
                     width: '640',
-                    videoId: 'KtGSdSqUTdw',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'KtGSdSqUTdw'
                   });
                   player13 = new YT.Player('video13', {
                     height: '390',
                     width: '640',
-                    videoId: 'IGyHBR-IM0Y',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'IGyHBR-IM0Y'
                   });
                   player14 = new YT.Player('video14', {
                     height: '390',
                     width: '640',
-                    videoId: 'knLCd8X1BUU',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'knLCd8X1BUU'
                   });
                   player15 = new YT.Player('video15', {
                     height: '390',
                     width: '640',
-                    videoId: 'VULt--bcWd0',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'VULt--bcWd0'
                   });
                   player16 = new YT.Player('video16', {
                     height: '390',
                     width: '640',
-                    videoId: 'iN3sHkni1gI',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'iN3sHkni1gI'
                   });
                   player17 = new YT.Player('video17', {
                     height: '390',
                     width: '640',
-                    videoId: 'iN3sHkni1gI',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'iN3sHkni1gI'
                   });
                   player18 = new YT.Player('video18', {
                     height: '390',
                     width: '640',
-                    videoId: 'pseK3CfQXUk',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'pseK3CfQXUk'
                   });
                   player19 = new YT.Player('video19', {
                     height: '390',
                     width: '640',
-                    videoId: 'vMNAWpmlaf8',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'vMNAWpmlaf8'
                   });
                   player20 = new YT.Player('video20', {
                     height: '390',
                     width: '640',
-                    videoId: 'NNkH4vDaVIo',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'NNkH4vDaVIo'
                   });
                   player21 = new YT.Player('video21', {
                     height: '390',
                     width: '640',
-                    videoId: 'SzDUrUat2Mo',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'SzDUrUat2Mo'
                   });
                   player22 = new YT.Player('video22', {
                     height: '390',
                     width: '640',
-                    videoId: '1fztE4mK7C0',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '1fztE4mK7C0'
                   });
                   player23 = new YT.Player('video23', {
                     height: '390',
                     width: '640',
-                    videoId: 'Qez3t68R7uI',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'Qez3t68R7uI'
                   });
                   player24 = new YT.Player('video24', {
                     height: '390',
                     width: '640',
-                    videoId: 'NppUNB5ZZR0',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'NppUNB5ZZR0'
                   });
                   player25 = new YT.Player('video25', {
                     height: '390',
                     width: '640',
-                    videoId: '6fph90Pz_-I',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '6fph90Pz_-I'
                   });
                   player26 = new YT.Player('video26', {
                     height: '390',
                     width: '640',
-                    videoId: 'qC7960yMaxA',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'qC7960yMaxA'
                   });
                   player27 = new YT.Player('video27', {
                     height: '390',
                     width: '640',
-                    videoId: 'Mfdz71UYteM',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'Mfdz71UYteM'
                   });
                   player28 = new YT.Player('video28', {
                     height: '390',
                     width: '640',
-                    videoId: 'GmvsHkdXRJY',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'GmvsHkdXRJY'
                   });
                   player29 = new YT.Player('video29', {
                     height: '390',
                     width: '640',
-                    videoId: 'h8N_0sP2It4',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'h8N_0sP2It4'
                   });
                   player30 = new YT.Player('video30', {
                     height: '390',
                     width: '640',
-                    videoId: 'uXpmHh2WWgk',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'uXpmHh2WWgk'
                   });
                   player31 = new YT.Player('video31', {
                     height: '390',
                     width: '640',
-                    videoId: '-6yIeuPW494',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '-6yIeuPW494'
                   });
                   player32 = new YT.Player('video32', {
                     height: '390',
                     width: '640',
-                    videoId: 'dowGFYjlp78',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'dowGFYjlp78'
                   });
                   player33 = new YT.Player('video33', {
                     height: '390',
                     width: '640',
-                    videoId: 'TeWd79M18xs',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'TeWd79M18xs'
                   });
                   player34 = new YT.Player('video34', {
                     height: '390',
                     width: '640',
-                    videoId: 'fcN37TxBE_s',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'fcN37TxBE_s'
                   });
                   player35 = new YT.Player('video35', {
                     height: '390',
                     width: '640',
-                    videoId: 'waPCCrftvQA',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'waPCCrftvQA'
                   });
                   player36 = new YT.Player('video36', {
                     height: '390',
                     width: '640',
-                    videoId: 'W4LKO1M8DY8',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'W4LKO1M8DY8'
                   });
                   player37 = new YT.Player('video37', {
                     height: '390',
                     width: '640',
-                    videoId: 'eC6TpxpvAJA',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'eC6TpxpvAJA'
                   });
                   player38 = new YT.Player('video38', {
                     height: '390',
                     width: '640',
-                    videoId: 'vwXzXpmwFG4',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'vwXzXpmwFG4'
                   });
                   player39 = new YT.Player('video39', {
                     height: '390',
                     width: '640',
-                    videoId: '7ea1BfxnlNo',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '7ea1BfxnlNo'
                   });
                   player40 = new YT.Player('video40', {
                     height: '390',
                     width: '640',
-                    videoId: 'O74gVrtcSrY',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'O74gVrtcSrY'
                   });
                   player41 = new YT.Player('video41', {
                     height: '390',
                     width: '640',
-                    videoId: 'EBmbhDV-fRU',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'EBmbhDV-fRU'
                   });
                   player42 = new YT.Player('video42', {
                     height: '390',
                     width: '640',
-                    videoId: 'wvau9wZ6_8k',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'wvau9wZ6_8k'
                   });
                   player43 = new YT.Player('video43', {
                     height: '390',
                     width: '640',
-                    videoId: '_Ov-lSkpOyI',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '_Ov-lSkpOyI'
                   });
                   player44 = new YT.Player('video44', {
                     height: '390',
                     width: '640',
-                    videoId: 'M9og58TMAm0',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'M9og58TMAm0'
                   });
                   player45 = new YT.Player('video45', {
                     height: '390',
                     width: '640',
-                    videoId: 'UpA04E2wSjE',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'UpA04E2wSjE'
                   });
                   player46 = new YT.Player('video46', {
                     height: '390',
                     width: '640',
-                    videoId: 'c-xUk444SWc',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'c-xUk444SWc'
                   });
                   player47 = new YT.Player('video47', {
                     height: '390',
                     width: '640',
-                    videoId: 'bqxxtxXWMsM',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'bqxxtxXWMsM'
                   });
                   player48 = new YT.Player('video48', {
                     height: '390',
                     width: '640',
-                    videoId: 'PWEdJRRndkQ',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'PWEdJRRndkQ'
                   });
                   player49 = new YT.Player('video49', {
                     height: '390',
                     width: '640',
-                    videoId: '_4V6_XlQ1k4',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '_4V6_XlQ1k4'
                   });
                   player50 = new YT.Player('video50', {
                     height: '390',
                     width: '640',
-                    videoId: 'X1TuhAn6C-g',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'X1TuhAn6C-g'
                   });
                   player51 = new YT.Player('video51', {
                     height: '390',
                     width: '640',
-                    videoId: 'y0WokbFgRR4',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'y0WokbFgRR4'
                   });
                   player52 = new YT.Player('video52', {
                     height: '390',
                     width: '640',
-                    videoId: 'VHOxxw_FGzo',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'VHOxxw_FGzo'
                   });
                   player53 = new YT.Player('video53', {
                     height: '390',
                     width: '640',
-                    videoId: '08hLYwEBNQA',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '08hLYwEBNQA'
                   });
                   player54 = new YT.Player('video54', {
                     height: '390',
                     width: '640',
-                    videoId: 'bYO8V-6IFs0',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'bYO8V-6IFs0'
                   });
                   player55 = new YT.Player('video55', {
                     height: '390',
                     width: '640',
-                    videoId: 'PWEdJRRndkQ',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'PWEdJRRndkQ'
                   });
                   player56 = new YT.Player('video56', {
                     height: '390',
                     width: '640',
-                    videoId: 'sQs6It4m5xY',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'sQs6It4m5xY'
                   });
                   player57 = new YT.Player('video57', {
                     height: '390',
                     width: '640',
-                    videoId: 'efDPdSK-2zk',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'efDPdSK-2zk'
                   });
                   player58 = new YT.Player('video58', {
                     height: '390',
                     width: '640',
-                    videoId: '_VojCRwzNac',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '_VojCRwzNac'
                   });
                   player59 = new YT.Player('video59', {
                     height: '390',
                     width: '640',
-                    videoId: '-kQpTMkQo3Y',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '-kQpTMkQo3Y'
                   });
                   player60 = new YT.Player('video60', {
                     height: '390',
                     width: '640',
-                    videoId: '0hec67I04P8',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: '0hec67I04P8'
                   });
                   player61 = new YT.Player('video61', {
                     height: '390',
                     width: '640',
-                    videoId: 'FzPFbOw4SCM',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'FzPFbOw4SCM'
                   });
                   player62 = new YT.Player('video62', {
                     height: '390',
                     width: '640',
-                    videoId: 'k8AMC2HssMw',
-                    // events: {
-                    //   'onReady': onPlayerReady,
-                    //   'onStateChange': onPlayerStateChange
-                    // }
+                    videoId: 'k8AMC2HssMw'
                   });                  
                 }
               </script>
             </div>
           </div>
         </div>
-    <!-- <script>
-        //   $(function () {
-        //     $('#myTab a:last').tab('show');
-        //   })
-        // </script>
-    -->
       </div>
       <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
       <div class="template result">
@@ -1276,5 +1017,8 @@
         <div class="content"></div> 
       </div>
     </div> <!-- container -->
+    <div id="aboutLink">
+      <a href="http://perfectfit.info320.ischool.uw.edu/about.html">About Us</a>
+    </div>
   </body>
 </html>
