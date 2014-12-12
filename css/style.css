@@ -129,6 +129,10 @@ h3 {
     display: none;
 }
 
+p#suggestions:hover {
+    cursor: pointer;
+}
+
 a h3 {
     font-size: 11pt;
 }
