@@ -12,6 +12,7 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#strengthResults').addClass('showSection');
         $('div.resultV').removeClass('filter');
+        $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         $('a#tab2').text('Arms');
         $('a#tab3').text('Legs');
         $('a#tab4').text('Core');
@@ -20,20 +21,23 @@ $(document).ready(function(){
             $('div.resultV').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         });
         $('a#tab2').click(function() {
-            search( 'arms', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'arm', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.arms').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab3').click(function() {
-            search( 'legs', $( "#linkResults " ), $( ".template.result" ) );
+            search( 'leg', $( "#linkResults " ), $( ".template.result" ) );
             $('div.resultV').addClass('filter');
             $('.legs').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab4').click(function() {
             search( 'core', $( "#linkResults " ), $( ".template.result" ) );
@@ -41,6 +45,7 @@ $(document).ready(function(){
             $('.core').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         if (!$('li').first().hasClass('active')) {
             $('.opt').removeClass('active');
@@ -60,6 +65,7 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#stretchResults').addClass('showSection');
         $('div.resultV').removeClass('filter');
+        $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         $('a#tab2').text('Upper Body');
         $('a#tab3').text('Core');
         $('a#tab4').text('Lower Body');
@@ -68,6 +74,7 @@ $(document).ready(function(){
             $('div.resultV').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         });
         $('a#tab2').click(function() {
             search( 'yoga', $( "#linkResults " ), $( ".template.result" ) );
@@ -75,6 +82,7 @@ $(document).ready(function(){
             $('.upper').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab3').click(function() {
             search( 'pilates', $( "#linkResults " ), $( ".template.result" ) );
@@ -82,6 +90,7 @@ $(document).ready(function(){
             $('.mid').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab4').click(function() {
             search( 'vinyasa', $( "#linkResults " ), $( ".template.result" ) );
@@ -89,6 +98,7 @@ $(document).ready(function(){
             $('.lower').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         if (!$('li').first().hasClass('active')) {
 	    	$('.opt').removeClass('active');
@@ -108,6 +118,7 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#cardioResults').addClass('showSection');
         $('div.resultV').removeClass('filter');
+        $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         $('a#tab2').text('At Home');
         $('a#tab3').text('In The Gym');
         $('a#tab4').text('Outdoors');
@@ -116,6 +127,7 @@ $(document).ready(function(){
             $('div.resultV').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         });
         $('a#tab2').click(function() {
             search( 'dance', $( "#linkResults " ), $( ".template.result" ) );
@@ -123,6 +135,7 @@ $(document).ready(function(){
             $('.home').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab3').click(function() {
             search( 'tredmill', $( "#linkResults " ), $( ".template.result" ) );
@@ -130,6 +143,7 @@ $(document).ready(function(){
             $('.gym').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab4').click(function() {
             search( 'cycling', $( "#linkResults " ), $( ".template.result" ) );
@@ -137,6 +151,7 @@ $(document).ready(function(){
             $('.out').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         if (!$('li').first().hasClass('active')) {
 	    	$('.opt').removeClass('active');
@@ -156,6 +171,7 @@ $(document).ready(function(){
         $('.sectionResults').removeClass('showSection');
         $('div#quickResults').addClass('showSection');
         $('div.resultV').removeClass('filter');
+        $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         $('a#tab2').text('5-10 Min');
         $('a#tab3').text('10-15 Min');
         $('a#tab4').text('15-30 Min');
@@ -164,6 +180,7 @@ $(document).ready(function(){
             $('div.resultV').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').addClass('limit');
         });
         $('a#tab2').click(function() {
             search( 'intense', $( "#linkResults " ), $( ".template.result" ) );
@@ -171,6 +188,7 @@ $(document).ready(function(){
             $('.short').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab3').click(function() {
             search( 'sprint', $( "#linkResults " ), $( ".template.result" ) );
@@ -178,6 +196,7 @@ $(document).ready(function(){
             $('.middle').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         $('a#tab4').click(function() {
             search( 'endurance', $( "#linkResults " ), $( ".template.result" ) );
@@ -185,6 +204,7 @@ $(document).ready(function(){
             $('.long').removeClass('filter');
             $('.secondPrompt').removeClass('showSecond');
             $('.thirdPrompt').addClass('showThird');
+            $('#videoResults div.resultV:nth-child(n+6)').removeClass('limit');
         });
         if (!$('li').first().hasClass('active')) {
 	    	$('.opt').removeClass('active');

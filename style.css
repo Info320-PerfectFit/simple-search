@@ -89,9 +89,13 @@ h3 {
     margin-bottom: 1%;
 }
 
-/*a {
+.opt a {
     color: #303E5E;
-}*/
+}
+
+.opt a:hover {
+    cursor: pointer;
+}
 
 .url {
     color: #152343;
@@ -139,7 +143,7 @@ h3 {
     text-align: right;
 }
 
-#videoResults div.result:nth-child(n+12) {
+.limit {
     display: none;
 }
 
