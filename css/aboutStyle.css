@@ -31,6 +31,20 @@ body {
 	width: 100%;
 }
 
+#aboutLink {
+    width: 50%;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    bottom: 0px;
+    float: right;
+}
+
+#aboutLink a {
+    text-align: right;
+    float: right;
+    bottom: 0px;
+}
+
 h1 {
 	font-size: 250%;
 	margin-top: 5%;
@@ -42,4 +56,12 @@ p {
 	margin-right: 5%;
 	margin-top: 2.5%;
 	margin-bottom: 2.5%;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+ul {
+    margin-left: 5%;
 }
